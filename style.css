@@ -31,7 +31,9 @@
   .top-right {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 60px;
+    display: flex;
+    gap: 50px; /* Add spacing between buttons */
   }
   
   .top-right button {
@@ -126,4 +128,29 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+.frosted-badge {
+  position: absolute;
+  bottom: 80px;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 79.2%; /* Decreased to 95% of the original width */
+  max-width: 665px; /* Decreased to 95% of the original max-width */
+  padding: 19px 28px; /* Decreased to 95% of the original padding */
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13.86px; /* Decreased to 95% of the original font size */
+  line-height: 1.52; /* Decreased to 95% of the original line-height */
+  border-radius: 19px; /* Decreased to 95% of the original border-radius */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 7.6px 30px rgba(0, 0, 0, 0.37); /* Decreased to 95% of the original shadow */
+  backdrop-filter: blur(7.6px); /* Decreased to 95% of the original blur */
+  -webkit-backdrop-filter: blur(7.6px); /* Decreased to 95% of the original blur */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Decreased to 95% of the original border */
+  z-index: 10; /* Ensure it appears in front of orang.png */
+}
+
+.frosted-badge .highlight {
+  color: #d6d6ff;
+  font-weight: 600;
 }
